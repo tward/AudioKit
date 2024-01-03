@@ -21,7 +21,7 @@
 /// - AllNotesOff: MIDI Panic
 /// - CC# (0, 3, 9, 12-31) Unnamed Continuous Controllers
 ///
-public enum MIDIControl: MIDIByte {
+public enum MIDIControl: MIDIByte, Codable, CaseIterable {
     /// Modulation Control
     case modulationWheel = 1
     /// Breath Control (in MIDI Saxophones for example)
